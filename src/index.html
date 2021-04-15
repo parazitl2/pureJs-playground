@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Тестовый тайтл</title>
+  </head>
+  <body>
+    <button class="mui-btn mui-btn--fab mui-btn--danger floating-btn" id="modal-btn">Wow</button>
+    <div id="sidebar">
+      <div class="mui--text-white mui--text-display1 mui--align-vertical">Заметки</div>
+    </div>
+    <div id="content" class="mui-container-fluid">
+      <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+          <br>
+          <br>
+          <div class="mui--text-black-54 mui--text-body2">Создай заметку</div>
+          <div class="mui-divider"></div>
+          <br>
+
+          <form class="mui-form" id="form">
+            <div class="mui-textfield mui-textfield--float-label">
+              <input type="text" id="title-input" required minlength="1" maxlength="50">
+              <label for="title-input">Заголовок заметки</label>
+            </div>
+            <div class="mui-textfield mui-textfield--float-label">
+              <textarea id="text-input"></textarea>
+              <label for="text-input">Текст заметки</label>
+            </div>
+            <button
+              id="submit"
+              type="submit" 
+              class="mui-btn mui-btn--raised mui-btn--primary"
+              disabled
+            >
+              Создать заметку
+            </button>
+          </form>
+          
+          <br>
+          <br>
+          <div class="mui--text-black-54 mui--text-body2">Заметки:</div>
+          <div class="mui-divider"></div>
+          <br>
+          <div id="list"></div>
+          <!-- <div class="mui--text-headline">Заметка 1</div>
+          <div class="mui--text-black-54">Оставлена <a href="#">Мной</a> сегодня</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis aliquam ipsum sed dignissim. Sed ac accumsan odio. Vivamus tristique dignissim neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc cursus felis nec purus condimentum vestibulum. Donec mauris nisi, sollicitudin eget iaculis id, suscipit id odio. <a href="#">Read more...</a></div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
